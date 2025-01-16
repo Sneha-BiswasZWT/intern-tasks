@@ -1,0 +1,646 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{ 
+   cursor: pointer; 
+}
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fcfaf6;
+}
+
+p{
+    font-family: "Poppins", serif;
+    color: #000000;
+    font-size: 18px;
+}
+
+h1{ 
+    font-family: "Playfair Display", serif;
+    font-size: 6rem;
+    font-weight: 600;
+
+}
+
+/* header section*/
+.main-header{
+    width: 100%;
+     box-shadow: 0 2px 10px rgba(78, 78, 78, 0.384);
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #099E71;
+    position: sticky;
+    top: 0;
+}
+
+.main-header .header-logo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 100%;
+    background-color: #F1F8F6;
+    padding: 0.25rem;
+    justify-content:center ;
+    align-items: center;
+}
+
+.main-header .header-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.header-nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.25rem;
+    padding-right: 10rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    padding-right:20px ;
+}
+.header-nav ul li{
+    padding-inline: 20px;
+}
+
+.header-nav ul li a{
+    font-family: "Poppins", serif;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #00000040;
+    
+}
+
+.header-nav ul li a:hover{
+    text-decoration: underline;
+}
+/* moblie header*/
+.hamburger {
+    display: none;
+    padding-inline: 1rem;
+  }
+  
+  .hamburger input[type="checkbox"] {
+    display: none;
+  }
+  
+  .menu-toggle-label {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger img {
+    width: 2rem;
+  }
+  
+  .nav-mobile {
+    display: none;
+    background: #222831;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .nav-mobile a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .nav-mobile a:hover {
+    background: #333;
+  }
+  
+  /* Show hamburger menu and mobile navigation for smaller screens */
+  @media (max-width: 1266px) {
+    .header-nav ul {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .menu-toggle-label {
+      display: block;
+    }
+  
+    #menu-toggle:checked ~ .nav-mobile {
+      display: flex;
+    }
+  }
+  
+/*hero section*/
+
+.hero-main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.25rem;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #01383C;
+}
+
+.hero-content{
+    flex-wrap: wrap;
+    padding: 9rem;
+    padding-right: 20rem;
+    width: 100%;
+}
+.hero-top{ 
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 1.5rem;
+
+}
+.hero-top .hero-te{
+    display: flex;
+
+    font-family: "Poppins", serif;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-size: 3px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-top .hero-te p{
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-inline: 10px;
+    
+
+}
+
+
+.hero-top .hero-te .line {
+
+    border: none;          /* Remove default border */
+    border-top: 2px solid #099E71; /* Add a solid top border */
+    width: 2.8rem;            /* Set line width */
+    
+
+  }
+
+.hero-content h1{
+    color:#FFFFFF;
+}
+
+/*about section*/
+
+.about-main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-block: 8rem;
+}
+
+
+.about-main .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.about-ele{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-ele img{
+    width: 35rem;
+}
+
+ .about-txt {
+    display: flex;
+    width: 40rem;
+    padding-inline: 3rem;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.about-txt h1{
+    font-size: 3rem;
+    color: #099E71;
+    padding-bottom: 2rem;
+    font-weight: 700;
+}
+
+.about-txt p{
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.about-txt .link{
+    display: flex;
+    
+}
+.about-txt .link a{
+    font-family: "Poppins", serif;
+    font-size: 1rem;
+    font-weight: 600;
+color: #099E71;
+text-decoration: none;
+}
+
+/*estate planning section*/
+.estate-main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F1F8F6;
+    padding-block: 3rem;
+}
+ 
+.estate-ele{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 10rem;
+    padding-left: 20rem;
+}
+
+.estate-txt {
+    display: flex;
+    width: 42rem;
+   padding-inline: 3rem;
+    justify-items: flex-end;
+    flex-direction: column;
+}
+
+.estate-txt h1{
+    font-size: 3rem;
+    color: #099E71;
+    padding-bottom: 2rem;
+    font-weight: 700;
+}
+
+.estate-txt p{
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.estate-btn a{
+    background-color: #099E71;
+    padding-inline: 1rem;
+    padding-block:0.5rem ;
+    color: #FFFFFF;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+.card-container {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-container .card{
+    display: flex;
+    width: 18.8rem;
+    padding-inline:2rem;
+    padding-bottom: 5rem;
+    
+    justify-items: center;
+
+}
+
+.card-content{ 
+    padding: 1.8rem;
+    background-color: #fcfaf6;
+    justify-items: center;
+    border-bottom: 2px solid #6e6d6f;;
+
+}
+
+.card-content:hover{
+    
+    border-bottom: 2px solid #099E71;
+    
+}
+
+.card-content .card-img{
+    width: 6rem;
+    border-radius: 10px;
+}
+.card-content:hover .card-img{
+    
+    content: url(../images/bulb-green.png);
+    
+}
+.card-content a{
+    text-decoration:none ;
+}
+
+
+.card-content a p{
+    text-align: center;
+    font-weight: 500;
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    color: #1b6572;
+}
+.card-content a p:hover {color:#6e6d6f;}
+
+.card-content p{
+    font-family: "Poppins", serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 17px;
+ 
+    text-align: center;
+
+}
+
+/*footer section*/
+
+.footer-container{
+    padding:6.25rem ;
+    background-color: #01383C;
+    width: 100%;
+    
+}
+
+.footer-content{
+    padding-inline: 21rem ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-content ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer-content ul li {
+    padding-block: 1rem;
+}
+.footer-content ul a{
+    font-family: "Poppins", serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    
+}
+.footer-content img{
+    width: 11.8rem;
+}
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+    .hero-top .hero-te p{
+        font-size: 15px;
+    }
+    .hero-content h1{
+        font-size: 2rem;
+    }
+    .hero-content{
+        padding-right: 0;
+        padding: 2rem;
+        padding-inline: 2rem;
+    }
+    
+    .estate-ele{
+        padding-inline: 1rem;
+        flex-direction: column;
+        }
+
+        .about-ele{
+            flex-direction: column;
+        }
+    
+        .about-txt{
+            padding-top: 1rem;
+        }
+
+        .about-ele img{
+            width: 20rem;
+        }
+        .about-txt{
+            width: 20rem;
+        }
+        .about-txt h1{
+            font-size: 2rem;
+        }
+        .estate-txt{
+            width: 20rem;
+        }
+        .estate-txt h1{
+            font-size: 2rem;
+        }
+
+    .card-container{
+        width: 75%;
+        padding-top: 3rem;
+        justify-content: space-evenly;
+    } 
+
+    .footer-content{
+        padding-inline: 1rem;
+    }
+
+    .footer-content img{
+        width: 7rem;
+    }
+    .footer-container{
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 420px) and (max-width: 1000px) {
+    .hero-top .hero-te p{
+        font-size: 15px;
+    }
+    .hero-content h1{
+        font-size: 3rem;
+    }
+    .hero-content{
+        padding-right: 0;
+        padding: 5rem;
+        padding-inline: 2rem;
+    }
+    
+    .estate-ele{
+        padding-inline: 1rem;
+        flex-direction: column;
+        }
+
+        .about-ele{
+            flex-direction: column;
+        }
+    
+        .about-txt{
+            padding-top: 2rem;
+        }
+
+        .about-ele img{
+            width: 20rem;
+        }
+        .about-txt{
+            width: 25rem;
+        }
+        .about-txt h1{
+            font-size: 2rem;
+        }
+        .estate-txt{
+            width: 25rem;
+        }
+        .estate-txt h1{
+            font-size: 2rem;
+        }
+
+    .card-container{
+        width: 90%;
+        padding-top: 3rem;
+        justify-content: space-evenly;
+    } 
+
+    .footer-content{
+        padding-inline: 1rem;
+    }
+
+    .footer-content img{
+        width: 7rem;
+    }
+    .footer-container{
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1232px) {
+    .estate-ele{
+        padding-inline: 1rem;
+        flex-direction: column;
+        }
+
+        .about-ele{
+            flex-direction: column;
+        }
+    
+        .about-txt{
+            padding-top: 1rem;
+        }
+
+        .about-ele img{
+            width: 25rem;
+        }
+        .about-txt{
+            width: 35rem;
+        }
+       
+
+        .estate-txt{
+            width: 35rem;
+        }
+
+    .card-container{
+        width: 75%;
+        padding-top: 3rem;
+        justify-content: space-evenly;
+    } 
+
+    .hero-content h1{
+        font-size: 4rem;
+    }
+
+    .footer-content{
+        padding-inline: 1rem;
+    }
+
+    .footer-content img{
+        width: 7rem;
+    }
+    .footer-container{
+        padding: 2rem;
+    }
+
+
+}
+
+@media screen and (min-width: 1232px) and (max-width: 1320px) {
+    .estate-ele{
+        padding-inline: 1rem;
+        flex-direction: column;
+        }
+
+    .about-ele{
+        flex-direction: column;
+    }
+
+    .about-txt{
+        padding-top: 1rem;
+    }
+    .card-container{
+        padding-top: 3rem;
+        justify-content: space-between;
+    }
+
+    .footer-content{
+        padding-inline: 3rem;
+    }
+
+    .footer-content img{
+        width: 7rem;
+    }
+    .footer-container{
+        padding: 2rem;
+    }
+
+
+  }
+
+  
+@media screen and (min-width: 1232px) and (max-width:1756px) {
+    .estate-ele{
+        padding-inline: 1rem;
+        }
+        .footer-content{
+            padding-inline: 3rem;
+        }
+    
+        .footer-content img{
+            width: 7rem;
+        }
+        .footer-container{
+            padding: 2rem;
+        }
+    
+  }

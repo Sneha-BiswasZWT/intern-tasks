@@ -1,0 +1,167 @@
+.main-top{
+
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 5rem;
+}
+
+.main-top h1{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5vh;
+    color: #1b1b1b;
+}
+.main-top-btn{
+    width: fit-content;
+    background-color: #285064;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    color: aliceblue;
+    overflow: hidden;
+}
+
+.card-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.card-container .card{
+    width: 33.33%;
+    padding-inline:5rem;
+    padding-bottom: 5rem;
+    flex-wrap:wrap ;
+   
+
+}
+
+.card-content{ 
+    width: 100%;
+    background-color: #fcfaf6;
+    border-radius: 10px;
+    flex-wrap: wrap;
+
+}
+
+.card-content:hover{
+    box-shadow: 0 0 5px 0 rgba(39, 39, 39, 0.349), 0 0 5px 0 rgba(22, 21, 21, 0.281);
+}
+.card-content img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-content a{
+    text-decoration:none ;
+}
+.card-content a h2 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3vh;
+    color: #6e6d6f;
+    padding: 20px;
+    text-align: left;
+    
+    
+}
+.card-content a h2:hover {color:#1b6572;}
+
+.card-content a p{
+    text-align: right;
+    font-weight: 500;
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    color: #1b6572;
+}
+.card-content a p:hover {color:#6e6d6f;}
+
+.card-content p{
+    font-family: "Poppins", serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 17px;
+    padding: 20px;
+    text-align: justify;
+
+}
+.card-keywords {
+    display: flex;
+
+    font-family: "Poppins", serif;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-size: 3px;
+    justify-content: flex-start;
+    padding-inline: 10px;
+  
+    
+
+}
+
+.card-keywords p{
+    gap: 2;
+    background-color: #55b9c634;
+    color: #1b6572;
+    width: fit-content;
+    height: fit-content;
+    padding-inline: 10px;
+    padding-block: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+    margin-bottom: 5px;
+
+}
+
+/* footer*/
+
+.footer-container{
+    bottom:0;
+width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    background-color: #1b1b1b;
+
+}
+
+.footer-container-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "Poppins", serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    padding-inline: 50px;
+    padding-block: 10px;
+
+}
+.footer-container-content ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-inline: 20px;
+   
+}
+.footer-container-content ul li{
+    padding: 10px;
+    gap:3;
+}
+.footer-container-content ul a{
+    color: #fcfaf6;
+}
+
+
