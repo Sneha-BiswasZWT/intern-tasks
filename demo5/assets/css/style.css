@@ -1,0 +1,217 @@
+
+
+/* header section*/
+.main-header{
+    width: 100%;
+     box-shadow: 0 2px 10px rgba(78, 78, 78, 0.384);
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6c2b79;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-header .header-logo{
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    justify-content:center ;
+    align-items: center;
+}
+
+.main-header .header-logo img{
+    width: 15rem;
+    height: 100%;
+}
+
+.header-nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.25rem;
+    padding-right: 10rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    padding-right:20px ;
+}
+.header-nav ul li{
+    padding-inline: 20px;
+}
+
+.header-nav ul li a{
+    font-family: "Poppins", serif;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #00000040;
+    
+}
+
+.header-nav ul li a:hover{
+    text-decoration: underline;
+}
+/* moblie header*/
+.hamburger {
+    display: none;
+    padding-inline: 1rem;
+  }
+  
+  .hamburger input[type="checkbox"] {
+    display: none;
+  }
+  
+  .menu-toggle-label {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger img {
+    width: 2rem;
+  }
+  
+  .nav-mobile {
+    display: none;
+    background: #222831;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .nav-mobile a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .nav-mobile a:hover {
+    background: #333;
+  }
+  
+  /* Show hamburger menu and mobile navigation for smaller screens */
+  @media (max-width: 1266px) {
+    .header-nav ul {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .menu-toggle-label {
+      display: block;
+    }
+  
+    #menu-toggle:checked ~ .nav-mobile {
+      display: flex;
+    }
+  }
+  
+/*hero section*/
+.hero{
+    background-color:#9FCEBE;
+    display: flex;
+    padding: 15rem;
+    padding-inline: 20rem;
+    background-image: radial-gradient(#9b9fff, #fea7ce, #9bf7eb );
+    justify-content: center;
+}
+
+.hero h1{
+    font-family: "Tangerine", serif;
+    font-size: 13rem ;
+    font-weight: 1000;
+    font-style: italic;
+    
+}
+
+.mask1{
+    background: url(../images/bg.png) 0 0 / cover no-repeat;
+   color: #de466c;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+
+.flip-main{
+    display: flex;
+    padding: 10rem;
+    gap: 10rem;
+    background-color: #97f1e7;
+    background-image: linear-gradient(#97f1e7,#456d6a88 );
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flip-main h1{
+    width: 100%;
+}
+.flip-card-container {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+  }
+  .flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  .flip-card-container:hover .flip-card {
+    transform: rotateY(180deg); /* <=>  rotateY(.5turn) */
+  }
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 #5e5e5e;
+    border-radius: 20px;
+    /* border-radius: 0.5rem; */
+  }
+  .flip-card-front {
+    background-color: #333;
+    color: #fff;
+  }
+  .flip-card-back {
+    background-color: #517fa4;
+    color: #fff;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 0.5rem; */
+    border-radius: 20px;
+  }
+
+  .flip-card-back img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 0.5rem; */
+    border-radius: 20px;
+  }
