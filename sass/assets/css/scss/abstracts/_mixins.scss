@@ -1,0 +1,10 @@
+@mixin flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@mixin banner{
+    justify-content: space-evenly;
+    padding-inline: 5rem;
+}

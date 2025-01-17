@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,17 +10,24 @@ a {
 }
 
 body {
-  background-color: rgb(238, 238, 238);
-  color: darkblue;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+h1 {
+  font-family: fantasy;
+  font-size: 10rem;
+  color: rgb(238, 238, 238);
+  font-weight: 100;
+}
+
 header {
-  background-color: #3C5BA9;
+  background-color: #030303;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
+  top: 0; /* Ensures it sticks to the top */
+  z-index: 1000;
   padding: 1rem;
   padding-inline: 5rem;
 }
@@ -41,4 +49,199 @@ header nav ul li {
   font-weight: 600;
   color: aliceblue;
   padding: 1rem;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  background-image: url("../../images/minion-hero.webp");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  padding: 5rem;
+  text-align: center;
+  color: rgb(238, 238, 238);
+  z-index: 1;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(5, 5, 5, 0.397), rgba(5, 5, 5, 0.87), rgba(0, 0, 0, 0.514));
+  z-index: 2;
+}
+.hero .hero-content {
+  z-index: 10;
+}
+.hero .hero-content h1 {
+  font-family: fantasy;
+  letter-spacing: 2rem;
+  font-size: 10rem;
+  font-weight: 200;
+}
+.hero .hero-content p {
+  font-size: 10rem;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.abt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-inline: 5rem;
+  background-color: #FFEEBF;
+}
+.abt .abt-txt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  background-color: #4A6985;
+  width: 60%;
+  align-items: flex-start;
+  padding: 5rem;
+  border: dashed 0.5rem black;
+  border-radius: 2rem;
+}
+.abt .abt-txt h1 {
+  font-family: fantasy;
+  font-weight: 100;
+  color: black;
+}
+.abt .abt-txt p {
+  width: 100%;
+  font-size: 2rem;
+  color: #FFE28E;
+  font-weight: 600;
+}
+.abt img {
+  height: 90vh;
+}
+
+.mission {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-inline: 5rem;
+  height: 90vh;
+  background-color: #787D76;
+}
+.mission h1 {
+  color: #ffff99;
+}
+.mission img {
+  width: 30rem;
+}
+.mission .text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+.mission .text .paper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.mission .text .postit {
+  margin: 1.3em;
+  text-align: center;
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+  padding-top: 2em;
+  border: 1px solid #E8E8E8;
+  font-family: "Indie Flower";
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  color: #005DAA;
+  border-bottom-right-radius: 60px 10px;
+  display: inline-block;
+  background: #ffff99;
+  box-shadow: 1px 1px 3px rgba(8, 8, 8, 0.425);
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-inline: 5rem;
+  height: 90vh;
+  background-image: linear-gradient(to right, #2A8FBE, #6AB1D2, #BFDDEC, #ffffff, #BFDDEC, #6AB1D2, #2A8FBE);
+  flex-direction: column;
+}
+.team h1 {
+  color: #4A6985;
+}
+.team .flip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* Position the front and back side */
+}
+.team .flip .flip-card-container {
+  width: 18.75rem;
+  height: 25rem;
+  perspective: 1000px;
+  margin: 5rem;
+}
+.team .flip .flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.team .flip .flip-card-container:hover .flip-card {
+  transform: rotateY(180deg); /* <=>  rotateY(.5turn) */
+}
+.team .flip .flip-card-front, .team .flip .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Safari */
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px 0 #5e5e5e;
+  border-radius: 20px;
+  /* border-radius: 0.5rem; */
+}
+.team .flip .flip-card-front {
+  background-color: #000000;
+  color: #fff;
+}
+.team .flip .flip-card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffde23;
+  color: #fff;
+  transform: rotateY(180deg);
+  padding: 2rem;
+}
+.team .flip .flip-card-back h2 {
+  color: #000000;
+  font-size: 4rem;
+}
+.team .flip .flip-card-back p {
+  color: #000000;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.team .flip .flip-card-front img {
+  height: 19rem;
+  /* border-radius: 0.5rem; */
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
