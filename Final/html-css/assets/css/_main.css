@@ -229,3 +229,9 @@ body
         flex-direction: column;
     }
 }
+@media (max-width: 550px) {
+
+    .main-header{
+    padding-inline: 1rem;}
+
+}
