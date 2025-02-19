@@ -31,6 +31,10 @@ p {
 }
 header {
   position: sticky;
+  top: 0;
+  background-color: white; /* Ensure it has a background */
+  z-index: 1000;
+  box-shadow: 0 14px 16px 0 #00000005;
 }
 nav {
   width: 100%;

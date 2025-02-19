@@ -116,3 +116,136 @@
 .teal {
   background-color: #09bdc9;
 }
+
+/* solution section*/
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/Images/bgimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  width: 100%;
+  color: #0a1940;
+  padding: 2.188rem;
+}
+
+.top p {
+  font-weight: bold;
+  letter-spacing: 3.6px;
+}
+
+.element {
+  width: 33.259rem;
+  height: 20rem;
+  background-image: url("../images/Images/element.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  color: #ffffff;
+  padding-left: 2.5rem;
+  padding-block: 1rem;
+  padding-right: 4rem;
+  justify-content: center;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select h2 {
+  font-weight: lighter;
+  max-width: 16.063rem;
+}
+
+.select i {
+  font-size: 1.5rem;
+}
+
+.element .line {
+  width: 4.25rem;
+  border: 0.2rem solid #ffffff;
+  opacity: 1;
+  margin-block: 1.5rem;
+}
+
+.element p {
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.left .option {
+  display: flex;
+  justify-content: space-between;
+  max-width: 30rem;
+  padding-block: 1.313rem;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+  border: 0.3rem solid #09bdc9;
+  border-left: 0.2rem solid #ffffff;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-top: 1.5rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right img {
+  width: 50rem;
+}
+
+.right h3 {
+  padding-left: 1rem;
+}
+.right p {
+  max-width: 31.938rem;
+  line-height: 30px;
+  padding-block: 1rem;
+  padding-left: 1rem;
+}
+
+.right btn {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #09bdc9;
+  padding-left: 0.602rem;
+  padding-right: 1.602rem;
+  padding-top: 0.75rem;
+  padding-bottom: 1.101rem;
+  border-radius: 2.5rem;
+  color: #ffffff;
+  max-width: 13.323rem;
+}
+
+.right btn i {
+  font-size: 1.25rem;
+  color: #ffffff;
+}
