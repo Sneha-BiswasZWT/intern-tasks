@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, Roboto;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 2.25rem;
+  line-height: 48px;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+p {
+  font-size: 1.125rem;
+}
+header {
+  position: sticky;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2.5rem;
+  justify-content: space-between;
+}
+nav img {
+  width: 13.261rem;
+}
+nav a {
+  text-decoration: none;
+  height: auto;
+  color: #0a1940;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  color: #09bdc9;
+}
+
+nav btn {
+  background-color: #09bdc9;
+  padding-inline: 1.602rem;
+  padding-top: 0.411rem;
+  padding-bottom: 0.599rem;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+nav btn:hover {
+  background-color: #125d63;
+}
+
+nav btn a {
+  color: aliceblue;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
