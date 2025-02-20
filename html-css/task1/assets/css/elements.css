@@ -31,6 +31,9 @@
   border-radius: 2.5rem;
   color: #ffffff;
 }
+.banner-top btn:hover {
+  background-color: #125d63;
+}
 
 .banner-top btn i {
   font-size: 1.25rem;
@@ -103,6 +106,10 @@
   padding-bottom: 0.563rem;
   border-radius: 2.5rem;
   font-size: 14px;
+}
+
+.label btn:hover {
+  box-shadow: 0 2px 10px 0 #0000008a;
 }
 
 .purple {
@@ -244,7 +251,9 @@
   color: #ffffff;
   max-width: 13.323rem;
 }
-
+.right btn:hover {
+  background-color: #125d63;
+}
 .right btn i {
   font-size: 1.25rem;
   color: #ffffff;
