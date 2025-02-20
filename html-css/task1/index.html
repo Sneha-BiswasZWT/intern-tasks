@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="container">
         <a href="#">
           <img src="./assets/images/Images/logo.png" alt="logo" />
         </a>
@@ -31,146 +31,321 @@
             <a href="#"> Get Started</a>
           </btn>
         </div>
+        <div class="hamburger">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-toggle-label">
+            <img src="./assets/images/Images/menu1.png" alt="Menu" />
+          </label>
+          <div class="nav-mobile">
+            <a href="#"> Company </a>
+            <a href="#"> Products </a>
+            <a href="#"> Solutions </a>
+            <a href="#"> Partners </a>
+            <a href="#"> Contact </a>
+          </div>
+        </div>
       </nav>
     </header>
 
     <section class="banner">
-      <div class="banner-top">
-        <div>
-          <h1>Products & Solutions</h1>
-          <p>BUILT FOR SERVICE PROVIDERS</p>
-        </div>
-        <a href="#">
-          <btn>
-            <h3>Get Started</h3>
-            <i class="fa-solid fa-circle-chevron-right"></i> </btn
-        ></a>
-      </div>
-
-      <div class="line"></div>
-
-      <div class="product-grid">
-        <div class="card">
-          <h2>BlindSPOT</h2>
-          <h4>Breach & Attack Simulation</h4>
-          <div class="line-purple"></div>
-          <p>
-            Simulate ransomware, supply chain and other cyber-attacks to expose
-            your client’s security control “blind spots”. 
-          </p>
-          <div class="label purple">
-            <a href="#"
-              ><btn>
-                Learn More
-                <i
-                  class="fa-solid fa-circle-chevron-right"
-                  style="color: #09bdc9"
-                ></i> </btn
-            ></a>
-            <img src="./assets/images/Images/Group 3648.svg" alt="icon" />
+      <div class="container">
+        <div class="banner-top">
+          <div>
+            <h1>Products & Solutions</h1>
+            <p>BUILT FOR SERVICE PROVIDERS</p>
           </div>
+          <a href="#">
+            <btn>
+              <h3>Get Started</h3>
+              <i class="fa-solid fa-circle-chevron-right"></i> </btn
+          ></a>
         </div>
-        <div class="card">
-          <h2>Confirm4Me</h2>
-          <h4>Fool-Proof Phishing Defense</h4>
-          <div class="line-red"></div>
-          <p>
-            Make phishing attacks obvious, so employees don’t make mistakes and
-            security teams don’t lose productivity.
-          </p>
-          <div class="label red">
-            <a href="#">
-              <btn>
-                Learn More
-                <i
-                  class="fa-solid fa-circle-chevron-right"
-                  style="color: #09bdc9"
-                ></i> </btn
-            ></a>
-            <img src="./assets/images/Images/confirm4me.svg" alt="icon" />
-          </div>
-        </div>
-        <div class="card">
-          <h2>Partner Support</h2>
-          <h4>Private-Labeled Security Force </h4>
-          <div class="line-teal"></div>
-          <p>
-            Leverage our Information Security team to extend your consulting
-            bench strength and meet market demand.
-          </p>
-          <div class="label teal">
-            <a href="#">
-              <btn>
-                Learn More
-                <i
-                  class="fa-solid fa-circle-chevron-right"
-                  style="color: #09bdc9"
-                ></i> </btn
-            ></a>
-            <img src="./assets/images/Images/support.svg" alt="icon" />
+
+        <div class="line"></div>
+
+        <div class="product-grid">
+          <div class="row">
+            <div class="card col-md-4">
+              <h2>BlindSPOT</h2>
+              <h4>Breach & Attack Simulation</h4>
+              <div class="line-purple"></div>
+              <p>
+                Simulate ransomware, supply chain and other cyber-attacks to
+                expose your client’s security control “blind spots”. 
+              </p>
+              <div class="label purple">
+                <a href="#"
+                  ><btn>
+                    Learn More
+                    <i
+                      class="fa-solid fa-circle-chevron-right"
+                      style="color: #09bdc9"
+                    ></i> </btn
+                ></a>
+                <img src="./assets/images/Images/Group 3648.svg" alt="icon" />
+              </div>
+            </div>
+            <div class="card col-md-4">
+              <h2>Confirm4Me</h2>
+              <h4>Fool-Proof Phishing Defense</h4>
+              <div class="line-red"></div>
+              <p>
+                Make phishing attacks obvious, so employees don’t make mistakes
+                and security teams don’t lose productivity.
+              </p>
+              <div class="label red">
+                <a href="#">
+                  <btn>
+                    Learn More
+                    <i
+                      class="fa-solid fa-circle-chevron-right"
+                      style="color: #09bdc9"
+                    ></i> </btn
+                ></a>
+                <img src="./assets/images/Images/confirm4me.svg" alt="icon" />
+              </div>
+            </div>
+            <div class="card col-md-4">
+              <h2>Partner Support</h2>
+              <h4>Private-Labeled Security Force </h4>
+              <div class="line-teal"></div>
+              <p>
+                Leverage our Information Security team to extend your consulting
+                bench strength and meet market demand.
+              </p>
+              <div class="label teal">
+                <a href="#">
+                  <btn>
+                    Learn More
+                    <i
+                      class="fa-solid fa-circle-chevron-right"
+                      style="color: #09bdc9"
+                    ></i> </btn
+                ></a>
+                <img src="./assets/images/Images/support.svg" alt="icon" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container">
-      <div class="top">
-        <p>SECURE OUR WORLD</p>
-        <h1>Solving Your Clients’ Biggest Challenges</h1>
-      </div>
-      <div class="content">
-        <div class="left">
-          <div class="element">
-            <div class="select">
-              <h2>Do My Security Controls Work?  </h2>
-              <i class="fa-solid fa-circle-chevron-down"></i>
-            </div>
-            <div class="line"></div>
+    <section class="container-box">
+      <div class="container">
+        <div class="top">
+          <p>SECURE OUR WORLD</p>
+          <h1>Solving Your Clients’ Biggest Challenges</h1>
+        </div>
+        <div class="content">
+          <div class="left">
+            <div class="element">
+              <div class="select">
+                <h2>Do My Security Controls Work?  </h2>
+                <i class="fa-solid fa-circle-chevron-down"></i>
+              </div>
+              <div class="line"></div>
 
+              <p>
+                Network defense teams have no visibility into the effectiveness
+                of their security tools and do not know if they will be alerted
+                in time or at all. 
+              </p>
+            </div>
+            <div class="option">
+              <p>Will my MSSP Detect & Respond? </p>
+              <i
+                class="fa-solid fa-circle-chevron-right"
+                style="color: #09bdc9"
+              ></i>
+            </div>
+            <div class="option">
+              <p>Does My Blue Team Practice Enough?</p>
+              <i
+                class="fa-solid fa-circle-chevron-right"
+                style="color: #09bdc9"
+              ></i>
+            </div>
+            <div class="option">
+              <p>Can My Employees Identify Phishing Emails?</p>
+              <i
+                class="fa-solid fa-circle-chevron-right"
+                style="color: #09bdc9"
+              ></i>
+            </div>
+          </div>
+
+          <div class="right">
+            <img src="./assets/images/Images/bigImage.png" alt="stats" />
+            <h3>Uncover Blind Spots</h3>
             <p>
-              Network defense teams have no visibility into the effectiveness of
-              their security tools and do not know if they will be alerted in
-              time or at all. 
+              BlindSPOT empowers partners to simulate attacks, visualize
+              security coverage gaps and remove customer risk throughout the
+              year and at a price they can afford.
             </p>
-          </div>
-          <div class="option">
-            <p>Will my MSSP Detect & Respond? </p>
-            <i
-              class="fa-solid fa-circle-chevron-right"
-              style="color: #09bdc9"
-            ></i>
-          </div>
-          <div class="option">
-            <p>Does My Blue Team Practice Enough?</p>
-            <i
-              class="fa-solid fa-circle-chevron-right"
-              style="color: #09bdc9"
-            ></i>
-          </div>
-          <div class="option">
-            <p>Can My Employees Identify Phishing Emails?</p>
-            <i
-              class="fa-solid fa-circle-chevron-right"
-              style="color: #09bdc9"
-            ></i>
+            <a href="#">
+              <btn>
+                <h3>Learn More</h3>
+                <i class="fa-solid fa-circle-chevron-right"></i> </btn
+            ></a>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="right">
-          <img src="./assets/images/Images/bigImage.png" alt="stats" />
-          <h3>Uncover Blind Spots</h3>
-          <p>
-            BlindSPOT empowers partners to simulate attacks, visualize security
-            coverage gaps and remove customer risk throughout the year and at a
-            price they can afford.
-          </p>
+    <section class="benefits banner">
+      <div class="container">
+        <div class="top">
+          <p>Benefits and Outcomes</p>
+          <h1>Bolstering Your Security Program</h1>
+        </div>
+        <div class="product-grid">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="./assets/images/Images/Group-4517.svg" alt="image" />
+                <h5>Security Operational Assurance</h5>
+                <p>
+                  RDV consistently provides clients with proof that their
+                  security controls are optimized and not adversely impacted by
+                  their team, third-party monitoring providers, or the security
+                  tool providers.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="./assets/images/Images/Group-4517.svg" alt="image" />
+                <h5>Security Operational Assurance</h5>
+                <p>
+                  RDV consistently provides clients with proof that their
+                  security controls are optimized and not adversely impacted by
+                  their team, third-party monitoring providers, or the security
+                  tool providers.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="./assets/images/Images/Group-4517.svg" alt="image" />
+                <h5>Security Operational Assurance</h5>
+                <p>
+                  RDV consistently provides clients with proof that their
+                  security controls are optimized and not adversely impacted by
+                  their team, third-party monitoring providers, or the security
+                  tool providers.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="./assets/images/Images/Group-4517.svg" alt="image" />
+                <h5>Security Operational Assurance</h4>
+                <p>
+                  RDV consistently provides clients with proof that their
+                  security controls are optimized and not adversely impacted by
+                  their team, third-party monitoring providers, or the security
+                  tool providers.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="./assets/images/Images/Group-4517.svg" alt="image" />
+                <h4>Security Operational Assurance</h4>
+                <p>
+                  RDV consistently provides clients with proof that their
+                  security controls are optimized and not adversely impacted by
+                  their team, third-party monitoring providers, or the security
+                  tool providers.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="./assets/images/Images/Group-4517.svg" alt="image" />
+                <h5>Security Operational Assurance</h5>
+                <p>
+                  RDV consistently provides clients with proof that their
+                  security controls are optimized and not adversely impacted by
+                  their team, third-party monitoring providers, or the security
+                  tool providers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="container-box discover">
+      <div class="container">
+      <div class="top">
+        <h1>Discover Your Security Control "Blind Spots"</h1>
+        <div class="banner-top">
+          <div>
+            <h3>BlindSPOT enables partners to simulate attack activity, visualize security control “blind spots” and remove security risks.</h3>
+          </div>
           <a href="#">
             <btn>
-              <h3>Learn More</h3>
+              <h3>Get Started</h3>
               <i class="fa-solid fa-circle-chevron-right"></i> </btn
           ></a>
         </div>
       </div>
+      <div class="product-grid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/images/Images/breach-icon.svg" alt="image" />
+              <h5>Attack Simulations</h5>
+              <p>
+                Simulate known and emerging cyber threats to validate security tool effectiveness and discover exploitable gaps.
+              </p>
+              <a href="#">
+                <btn>
+                  Learn More
+                  <i
+                    class="fa-solid fa-circle-chevron-right"
+                 
+                  ></i> </btn
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/images/Images/breach-icon.svg" alt="image" />
+              <h5>Attack Simulations</h5>
+              <p>
+                Simulate known and emerging cyber threats to validate security tool effectiveness and discover exploitable gaps.
+              </p>
+              <a href="#">
+                <btn>
+                  Learn More
+                  <i
+                    class="fa-solid fa-circle-chevron-right"
+                    
+                  ></i> </btn
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/images/Images/breach-icon.svg" alt="image" />
+              <h5>Attack Simulations</h5>
+              <p>
+                Simulate known and emerging cyber threats to validate security tool effectiveness and discover exploitable gaps.
+              </p>
+              <a href="#">
+                <btn>
+                  Learn More
+                  <i
+                    class="fa-solid fa-circle-chevron-right"
+                  
+                  ></i> </btn
+              ></a>
+            </div>
+          </div>
+    </div>
     </section>
   </body>
 </html>

@@ -1,13 +1,16 @@
 .banner {
   background-color: #0a1940;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   color: #ffffff;
   width: 100%;
-  align-items: center;
-  padding: 2.5rem;
+  /* align-items: center; */
+  /* padding: 2.5rem; */
+  padding: 2.5rem 0;
 }
-
+.banner .top {
+  color: #ffffff;
+}
 .banner-top {
   display: flex;
   width: 100%;
@@ -46,16 +49,6 @@
   border: 0.2rem solid #ffffff;
   opacity: 0.16;
   margin-block: 10px;
-}
-
-.product-grid {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  gap: 50px;
-}
-.card {
-  width: 30%;
 }
 
 .card p {
@@ -126,9 +119,10 @@
 
 /* solution section*/
 
-.container {
+.container-box {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  padding-bottom: 2.188rem;
   background-image: url("../images/Images/bgimage.jpg");
   background-size: cover;
   background-position: center;
@@ -140,29 +134,54 @@
 .top {
   width: 100%;
   color: #0a1940;
-  padding: 2.188rem;
+  padding-block: 2.188rem;
+  text-align: left;
 }
 
 .top p {
   font-weight: bold;
   letter-spacing: 3.6px;
 }
-
+.left {
+  width: 45%;
+  padding: 0 3.44rem 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .element {
-  width: 33.259rem;
   height: 20rem;
-  background-image: url("../images/Images/element.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #0a1940;
   display: flex;
   flex-direction: column;
   z-index: 10;
   color: #ffffff;
-  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   padding-block: 1rem;
-  padding-right: 4rem;
   justify-content: center;
+  align-content: space-between;
+  position: relative;
+}
+
+.element::before {
+  content: "";
+  position: absolute;
+  left: calc(100% - 10px);
+  top: 0;
+  width: 47px;
+  height: 100%;
+  background: url(../images/Images/element.png) no-repeat top right;
+  background-size: 100% 100%;
+}
+.element::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: #0a1940;
+  z-index: -1;
 }
 
 .select {
@@ -193,28 +212,16 @@
 
 .content {
   display: flex;
-  justify-content: space-between;
-  padding-right: 10rem;
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
 }
 
 .left .option {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 30rem;
   padding-block: 1.313rem;
-  padding-left: 2.5rem;
+
   padding-right: 1rem;
-  border: 0.3rem solid #09bdc9;
-  border-left: 0.2rem solid #ffffff;
-  border-top-right-radius: 3rem;
-  border-bottom-right-radius: 3rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
   margin-top: 1.5rem;
 }
 
@@ -224,7 +231,7 @@
 }
 
 .right img {
-  width: 50rem;
+  width: 100%;
 }
 
 .right h3 {
@@ -257,4 +264,235 @@
 .right btn i {
   font-size: 1.25rem;
   color: #ffffff;
+}
+
+.option {
+  position: relative;
+}
+.option:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  border: 0.3rem solid #09bdc9;
+  border-radius: 31px;
+}
+@media (max-width: 1200px) {
+  .banner-top {
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+
+  .banner-top btn {
+    width: 100%;
+    max-width: 250px;
+    margin: 1rem 0;
+  }
+
+  .right img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner-top {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .banner-top p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .banner-top btn {
+    margin: 1rem 0;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1.101rem;
+    font-size: 0.9rem;
+    justify-content: space-evenly;
+  }
+  .content {
+    flex-direction: column;
+    align-items: left;
+  }
+  .container-box {
+    height: auto;
+    padding: 3rem 1rem;
+    text-align: left;
+  }
+  .left,
+  .right {
+    width: 98%;
+    padding: 0;
+    text-align: left;
+  }
+  .right {
+    display: none;
+  }
+}
+
+/* 🔹 Max-width: 767px (For Mobile Phones) */
+@media (max-width: 767px) {
+  .banner {
+    padding: 1.5rem 0;
+    text-align: left;
+  }
+
+  .banner-top {
+    flex-direction: column;
+    align-items: left;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .banner-top p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+
+  .banner-top btn {
+    margin: 1rem 0;
+    width: 100%;
+    padding-top: 0.75rem;
+    padding-bottom: 1.101rem;
+    font-size: 0.9rem;
+    justify-content: space-evenly;
+  }
+
+  .container-box {
+    height: auto;
+    padding: 1rem 1rem;
+    text-align: left;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+
+  .card {
+    padding-block: 1rem;
+  }
+
+  .element {
+    height: auto;
+    padding: 1.5rem;
+  }
+  .select h2 {
+    font-weight: bold;
+  }
+}
+
+.benefits .top {
+  padding-bottom: 2rem;
+  padding-top: 0;
+  border-bottom: 5px solid #ffffff67;
+}
+
+.benefits .card {
+  padding: 1.5rem;
+  border: 5px solid #09bdc9;
+  height: 100%;
+  border-radius: 0.63rem;
+}
+.benefits .card p {
+  font-size: 0.9rem;
+  line-height: 30px;
+}
+.benefits .card h5 {
+  padding-block: 1.25rem;
+  margin-top: 1.25rem;
+  position: relative;
+}
+
+.benefits .card h5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 5px;
+  background-color: #ffffff;
+}
+
+.discover .top h3 {
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 37.5rem;
+}
+.discover .top h1 {
+  padding-bottom: 2rem;
+  padding-top: 0;
+  margin-bottom: 2rem;
+  border-bottom: 5px solid #949597;
+}
+
+.discover .banner-top {
+  padding: 0;
+}
+
+.discover .top {
+  padding-bottom: 0;
+}
+
+.discover .card {
+  padding-inline: 0.94rem;
+  border-left: 1px solid #949597;
+  padding-bottom: 1rem;
+}
+
+.discover .card h5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 36px;
+  height: 5px;
+  background-color: #949597;
+}
+
+.discover .card h5 {
+  padding-block: 1.25rem;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.discover .card btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #09bdc9;
+  font-size: 1.13rem;
+  padding: 0.63rem 1.13rem 0.83rem 0.88rem;
+  border-radius: 2.5rem;
+  color: #ffffff;
+  max-width: 11rem;
+}
+
+.discover .card btn i {
+  color: #ffffff;
+}
+
+.discover .row {
+  padding-bottom: 2rem;
 }
