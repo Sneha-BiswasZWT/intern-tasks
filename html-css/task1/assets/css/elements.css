@@ -396,7 +396,8 @@
 
   .element {
     height: auto;
-    padding: 1.5rem;
+    padding-right: 1rem;
+    padding-block: 1rem;
   }
   .select h2 {
     font-weight: bold;
