@@ -502,6 +502,9 @@
 .wrap-content {
   padding-top: 1rem;
 }
+.wrap-content-toggle {
+  padding-top: 1rem;
+}
 
 .banner .card {
   background-color: #eb6272;
