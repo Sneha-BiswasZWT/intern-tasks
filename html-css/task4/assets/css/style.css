@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(236, 52, 212);
+  cursor: pointer;
+}
+body {
+  background-color: rgb(10, 22, 48);
+  color: yellowgreen;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 2rem;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 2rem;
+  border-radius: 2rem;
+  width: 70vw;
+  border: solid 1px yellowgreen;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+header nav img {
+  width: 6rem;
+}
+
+header nav {
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 5rem;
+  border: solid 1px yellowgreen;
+  background-color: rgba(236, 52, 211, 0.233);
+  position: sticky;
+  top: 2rem;
+  z-index: 100;
+}
+.search-bar {
+  width: 80%;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+
+.search-bar input {
+  background-color: rgb(10, 22, 48);
+  color: yellowgreen;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: solid 1px rgb(236, 52, 212);
+  width: 50%;
+}
+.search-bar button {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: solid 1px rgb(236, 52, 212);
+  color: rgb(10, 22, 48);
+  font-weight: bold;
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: rgb(236, 52, 212);
+  border: solid 1px yellowgreen;
+  color: aliceblue;
+}
+
+/* card content */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60%;
+  border-radius: 1rem;
+  gap: 1rem;
+  background-color: rgba(250, 235, 215, 0.308);
+  border: solid 1px yellowgreen;
+  padding: 2rem 2rem;
+  box-shadow: 0 2px 10px rgba(78, 78, 78, 0.384);
+  cursor: pointer;
+}
+
+.col-md-4 {
+  width: calc(33.33% - 2rem);
+  padding: 0 15px;
+}
+@media (max-width: 767px) {
+  .col-md-4 {
+    width: 100%;
+  }
+}
+
+.card-figure img {
+  width: 100%;
+  height: 30vh;
+  border-radius: 1rem;
+
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
