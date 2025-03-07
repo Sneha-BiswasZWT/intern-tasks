@@ -25,8 +25,8 @@ const banners = [
 
 export default function CardSection() {
   return (
-    <div className="py-20 px-48 flex flex-wrap justify-center bg-[#CDD3DC]">
-      <div className="flex flex-col justify-center w-full max-w-2xl pb-12">
+    <div className="py-6 px-12 lg:py-[5rem] lg:px-[11.875rem] flex flex-col items-center flex-wrap justify-center bg-[#CDD3DC]">
+      <div className="flex flex-col justify-center  max-w-2xl pb-12">
         <h1 className="text-4xl text-primary font-semibold text-center pb-4">
           Highly effective solutions
         </h1>
@@ -41,7 +41,7 @@ export default function CardSection() {
         {banners.map((banner, index) => (
           <div
             key={index}
-            className="flex w-[20rem] rounded-md shadow-lg flex-col bg-white"
+            className="flex max-w-[20rem] rounded-md shadow-lg flex-col bg-white"
           >
             <div className="px-[2rem] py-[2.5rem] w-full">
               <h2 className="text-[1.5rem] font-semibold text-primary pb-4">

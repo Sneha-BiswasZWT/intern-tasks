@@ -1,6 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { useSwipeable } from "react-swipeable";
 
 const banners = [
   {
@@ -34,8 +35,24 @@ const BannerSlider = () => {
     setCurrent((prev) => (prev - 1 + banners.length) % banners.length);
   };
 
+  // Auto-play in mobile view
+  useEffect(() => {
+    const autoPlay = window.innerWidth < 640;
+    if (autoPlay) {
+      const interval = setInterval(nextSlide, 3000);
+      return () => clearInterval(interval);
+    }
+  }, []);
+
+  // Swipe handlers
+  const handlers = useSwipeable({
+    onSwipedLeft: nextSlide,
+    onSwipedRight: prevSlide,
+    trackTouch: true,
+  });
+
   return (
-    <div className="relative w-full h-[32.25rem] overflow-hidden">
+    <div {...handlers} className="relative w-full h-[32.25rem] overflow-hidden">
       {banners.map((banner, index) => (
         <div
           key={index}
@@ -50,8 +67,8 @@ const BannerSlider = () => {
             className="object-cover brightness-50 -z-10"
           />
 
-          <div className="w-[35rem]   duration-300 p-6 ">
-            <h1 className=" text-2xl sm:text-[3rem] font-semibold text-center text-white">
+          <div className="w-[40rem] p-6 duration-300">
+            <h1 className="text-2xl sm:text-5xl font-semibold text-center text-white">
               {banner.title}
             </h1>
 
@@ -63,7 +80,7 @@ const BannerSlider = () => {
               <button className="text-sm text-black bg-white py-[.875rem] px-[1.125rem] rounded-sm hover:bg-gray-600 hover:text-white cursor-pointer">
                 Learn More
               </button>
-              <button className="text-sm text-white border border-white py-[.875rem] px-[1.125rem] rounded-sm  hover:bg-gray-400 hover:text-black cursor-pointer">
+              <button className="text-sm text-white border border-white py-[.875rem] px-[1.125rem] rounded-sm hover:bg-gray-400 hover:text-black cursor-pointer">
                 Learn More
               </button>
             </div>
@@ -84,26 +101,25 @@ const BannerSlider = () => {
         ))}
       </div>
 
-      {/* Previous Button */}
+      {/* Arrows for large screens only */}
       <button
-        className="absolute top-1/2 left-[5rem] transform -translate-y-1/2 p-2 text-white rounded-full transition-colors duration-300 cursor-pointer "
+        className="hidden lg:block absolute top-1/2 left-[5rem] transform -translate-y-1/2 p-2 text-white rounded-full transition-colors duration-300 cursor-pointer"
         onClick={prevSlide}
       >
         <Image
           src="/arrow.png"
-          alt="logo"
+          alt="prev"
           width={24}
           height={24}
-          className="rotate-180 hover-size-2"
+          className="rotate-180"
         />
       </button>
 
-      {/* Next Button */}
       <button
-        className="absolute top-1/2 right-[5rem] transform -translate-y-1/2 p-2 text-white rounded-full transition-colors duration-300 cursor-pointer"
+        className="hidden lg:block absolute top-1/2 right-[5rem] transform -translate-y-1/2 p-2 text-white rounded-full transition-colors duration-300 cursor-pointer"
         onClick={nextSlide}
       >
-        <Image src="/arrow.png" alt="logo" width={24} height={24} />
+        <Image src="/arrow.png" alt="next" width={24} height={24} />
       </button>
     </div>
   );

@@ -1,16 +1,35 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
+import { FiMenu, FiX } from "react-icons/fi"; // Importing icons for the hamburger
 
 export default function Navbar() {
-  // Capitalized component name
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="sticky top-0 left-0 w-full bg-white shadow-sm z-50">
-      <div className="py-6 px-20 flex flex-wrap justify-between items-center">
+      <div className="py-6 px-6 md:px-20 flex justify-between items-center">
+        {/* Logo */}
         <Link href="/">
           <img src="/logo.png" alt="logo" className="w-32" />
         </Link>
 
-        <nav>
-          <ul className="flex gap-6">
+        {/* Hamburger Icon */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden text-2xl"
+        >
+          {isOpen ? <FiX /> : <FiMenu />}
+        </button>
+
+        {/* Navigation Links */}
+        <nav
+          className={`absolute md:static top-16 left-0 w-full bg-white md:w-auto md:flex transition-all duration-300 ${
+            isOpen ? "block shadow-md" : "hidden"
+          }`}
+        >
+          <ul className="flex flex-col md:flex-row gap-6 p-6 md:p-0">
             <li>
               <Link href="/" className="hover:text-gray-600 transition">
                 Home
