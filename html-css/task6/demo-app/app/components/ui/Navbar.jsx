@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { FiMenu, FiX } from "react-icons/fi"; // Importing icons for the hamburger
+import { FiMenu, FiX } from "react-icons/fi";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,12 +36,12 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/about" className="hover:text-gray-600 transition">
+              <Link href="/" className="hover:text-gray-600 transition">
                 About
               </Link>
             </li>
             <li>
-              <Link href="/blog" className="hover:text-gray-600 transition">
+              <Link href="/" className="hover:text-gray-600 transition">
                 Blog
               </Link>
             </li>
