@@ -91,7 +91,7 @@ export default function TestimonialSlider() {
               >
                 <div className="p-3 lg:p-6 font-semibold text-center text-[#76879D] text-xl/[1.75rem] sm:text-2xl/[1.75rem] flex flex-wrap justify-center max-w-[80%] sm:max-w-[70%]">
                   <Image
-                    src="/quotes.png"
+                    src="/Quotes.png"
                     alt="quotes"
                     width={34}
                     height={28}
