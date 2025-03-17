@@ -45,7 +45,7 @@ export default function QuestionsSection() {
             </button>
             <div
               className={`px-12 bg-gray-100 overflow-hidden transition-all duration-300 ${
-                activeIndex === index ? "max-h-[500px] pb-8" : "max-h-0"
+                activeIndex === index ? "max-h-[35rem] pb-8" : "max-h-0"
               }`}
             >
               <p className="text-gray-700">{item.content}</p>

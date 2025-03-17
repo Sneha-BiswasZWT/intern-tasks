@@ -61,14 +61,14 @@ export default function TestimonialSlider() {
   return (
     <div
       {...handlers}
-      className="py-6 px-12 lg:py-[5rem] lg:px-[11.875rem] flex flex-wrap justify-center bg-[#E8EBEF] relative"
+      className="py-6 px-2 lg:py-[5rem] lg:px-[11.875rem] flex flex-wrap justify-center bg-[#E8EBEF] relative"
     >
       <div className="flex flex-col justify-center w-full h-auto lg:max-w-[52.5rem] pb-6 items-center relative">
         <h1 className="text-2xl lg:text-4xl text-primary font-semibold text-center">
           Testimonials
         </h1>
 
-        <div className="flex justify-center items-center relative w-full pt- pb-6">
+        <div className="flex justify-center items-center relative w-full pb-6">
           {/* Arrows for large screens */}
           <button
             className="hidden lg:block absolute left-[-3rem] transform -translate-y-1/2 rounded-sm hover:border-1 border-[#d0d2da] transition duration-300 cursor-pointer p-[10px] lg:mr-[6.75rem]"
@@ -89,7 +89,7 @@ export default function TestimonialSlider() {
                   current === index ? "opacity-100 block" : "opacity-0 hidden"
                 }`}
               >
-                <div className="p-6 font-semibold text-center text-[#76879D] text-xl/[1.75rem] sm:text-2xl/[1.75rem] flex flex-wrap justify-center max-w-[80%] sm:max-w-[70%]">
+                <div className="p-3 lg:p-6 font-semibold text-center text-[#76879D] text-xl/[1.75rem] sm:text-2xl/[1.75rem] flex flex-wrap justify-center max-w-[80%] sm:max-w-[70%]">
                   <Image
                     src="/quotes.png"
                     alt="quotes"
