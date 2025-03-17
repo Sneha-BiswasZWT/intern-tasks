@@ -37,11 +37,11 @@ export default function CardSection() {
       </div>
 
       {/* Cards Section */}
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-8 w-full">
         {banners.map((banner, index) => (
           <div
             key={index}
-            className="flex max-w-[20rem] rounded-md shadow-lg flex-col bg-white"
+            className="flex rounded-md shadow-lg w-full m:w-1/3 flex-col bg-white max-w-[20.75rem]"
           >
             <div className="px-[2rem] py-[2.5rem] w-full">
               <h2 className="text-[1.5rem] font-semibold text-primary pb-4">

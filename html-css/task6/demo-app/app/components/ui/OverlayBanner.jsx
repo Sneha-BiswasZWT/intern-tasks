@@ -27,7 +27,7 @@ export default function OverlayBanner() {
           </div>
 
           <div>
-            <button className="text-sm text-primary bg-white py-[.875rem] px-[1.125rem] rounded-sm hover:bg-gray-600 hover:text-white cursor-pointer gap-3 items-center flex flex-wrap justify-center">
+            <button className="text-sm text-primary bg-white py-[.875rem] px-[1.125rem] rounded-sm hover:bg-gray-600 hover:text-white cursor-pointer gap-3 items-center flex flex-wrap justify-center leading-none">
               <p> Button</p>
               <Image
                 src={"/arrow3.png"}

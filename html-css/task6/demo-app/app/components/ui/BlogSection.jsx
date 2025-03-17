@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function BlogSection() {
   return (
     <>
-      <div className="py-6 px-12 lg:py-[5rem] lg:px-[11.875rem] flex flex-col items-center flex-wrap justify-center">
+      <div className="py-6 px-12 lg:py-[5rem] lg:px-[11.875rem] flex flex-col items-center flex-wrap justify-center bg-white">
         <div className="flex flex-col justify-center max-w-[40rem] pb-[3rem]">
           <h1 className="text-4xl text-primary font-semibold text-center pb-4">
             Highly effective solutions
@@ -25,7 +25,7 @@ export default function BlogSection() {
                 className="object-cover rounded-t-md lg:rounded-l-md lg:rounded-t-none"
               />
             </div>
-            <div className="py-[4.375rem] px-[3.5rem] w-full">
+            <div className="py-[2.3125rem] px-6 lg:py-[4.375rem] lg:px-[3.5rem] w-full">
               <h2 className="text-[1.5rem] font-semibold text-primary pb-4">
                 Web design
               </h2>
@@ -36,12 +36,12 @@ export default function BlogSection() {
                 dolor sit amet.
               </p>
 
-              <button className="py-[.875rem] px-[1.125rem] bg-primary text-white rounded-sm">
+              <button className="py-[.75rem] px-[1.125rem] bg-primary text-white rounded-sm text-sm leading-none hover:bg-black cursor-pointer">
                 Button
               </button>
             </div>
           </div>
-          <div className="flex-col flex lg:flex-row w-full gap-[2.25rem]">
+          <div className="flex-col flex lg:flex-row w-full gap-[2.25rem] ">
             <div className="flex flex-col-reverse lg:flex-row lg:w-1/2 rounded-md  shadow-all ">
               <div className="py-[2.3125rem] px-6 w-full ">
                 <h2 className="text-[1.5rem] font-semibold text-primary pb-4">
@@ -54,7 +54,7 @@ export default function BlogSection() {
                   dolor sit amet.
                 </p>
 
-                <button className="py-[.875rem] px-[1.125rem] bg-primary text-white rounded-sm">
+                <button className="py-[.75rem] px-[1.125rem] bg-primary text-white rounded-sm  text-sm leading-none hover:bg-black cursor-pointer">
                   Button
                 </button>
               </div>
@@ -79,7 +79,7 @@ export default function BlogSection() {
                   dolor sit amet.
                 </p>
 
-                <button className="py-[.875rem] px-[1.125rem] bg-primary text-white rounded-sm">
+                <button className="py-[.75rem] px-[1.125rem] bg-primary text-white text-sm rounded-sm leading-none hover:bg-black cursor-pointer">
                   Button
                 </button>
               </div>

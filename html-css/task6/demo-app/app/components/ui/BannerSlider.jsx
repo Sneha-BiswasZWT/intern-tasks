@@ -77,10 +77,10 @@ const BannerSlider = () => {
             </div>
 
             <div className="flex flex-wrap gap-4 justify-center">
-              <button className="text-sm text-black bg-white py-[.875rem] px-[1.125rem] rounded-sm hover:bg-gray-600 hover:text-white cursor-pointer">
+              <button className="text-sm text-black bg-white py-[.7rem] px-[1.125rem] rounded-sm hover:bg-gray-600 hover:text-white cursor-pointer leading-none">
                 Learn More
               </button>
-              <button className="text-sm text-white border border-white py-[.875rem] px-[1.125rem] rounded-sm hover:bg-gray-400 hover:text-black cursor-pointer">
+              <button className="text-sm text-white border border-white py-[.7rem] px-[1.125rem] rounded-sm hover:bg-gray-400 hover:text-black cursor-pointer leading-none">
                 Learn More
               </button>
             </div>

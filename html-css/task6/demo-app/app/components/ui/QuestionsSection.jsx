@@ -39,7 +39,7 @@ export default function QuestionsSection() {
               <span className="font-semibold text-lg text-primary">
                 {item.title}
               </span>
-              <span className="text-xl">
+              <span className="text-xl text-primary">
                 {activeIndex === index ? "x" : "+"}
               </span>
             </button>
