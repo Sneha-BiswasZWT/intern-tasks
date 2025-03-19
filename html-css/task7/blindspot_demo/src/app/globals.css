@@ -8,6 +8,11 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: #09bdc9;
+  --color-custom-gray: #7b7b7b;
+  --color-secondary: #0a1940;
+  --color-custom-teal: #447a83;
+  --color-custom-green: #65d193;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -20,7 +25,56 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 3.6875rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1.125rem;
+}
+.h7 {
+  font-size: 1rem;
+}
+
+.wrapper-container {
+  max-width: 1170px;
+  margin: auto;
+  padding-inline: 2.5rem;
+}
+
+.topnav li:not(:last-child)::after {
+  content: " | ";
+  color: #7b7b7b;
+}
+
+.bottomnav li h6::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 10px;
+  background-color: #09bdc9;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.bottomnav li h6:hover::after {
+  width: 100%;
+  left: 0;
 }
