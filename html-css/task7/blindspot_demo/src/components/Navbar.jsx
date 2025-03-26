@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { FiMenu, FiX } from "react-icons/fi";
+import { FaFacebookF, FaYoutube, FaLinkedinIn } from "react-icons/fa6";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,19 +13,20 @@ function Navbar() {
       <div className="wrapper-container flex justify-between items-center">
         <div>
           <Link href="/">
-            <Image
-              src="/logo.png"
-              alt="logo "
-              width={215}
-              height={1000}
-              className=" w-[8.2606rem] lg:w-[13.2606rem]"
-            ></Image>
+            <div className=" w-[8.2606rem] lg:w-[13.2606rem]">
+              <Image
+                src="/logo.png"
+                alt="logo "
+                width={215}
+                height={1000}
+              ></Image>
+            </div>
           </Link>
         </div>
         <div className="hidden lg:flex flex-col w-full">
           <div>
             <nav className="flex topnav items-center justify-end pt-[26px]">
-              <ul className=" flex text-custom-gray text-sm font-medium ">
+              <ul className=" flex text-custom-gray text-sm font-medium  ">
                 <li className="px-[8px] hover:text-primary ">
                   <Link href="/">800-214-2107 </Link>
                 </li>
@@ -36,77 +38,69 @@ function Navbar() {
                   <Link href="/">Partner Portal</Link>
                 </li>
               </ul>
-              <div className="flex">
-                <Link href="/">
-                  <Image
-                    src="/facebook.svg"
-                    alt="Facebook"
-                    width={18}
-                    height={17}
-                    className="  px-[4px]"
-                  ></Image>
+              <div className="flex items-center">
+                <Link
+                  href="/"
+                  className="text-primary hover:text-secondary text-[18px] px-[4px] font-[400]"
+                >
+                  <FaFacebookF />
                 </Link>
-                <Link href="/">
-                  <Image
-                    src="/youtube.svg"
-                    alt="YouTube"
-                    width={32.65}
-                    height={17}
-                    className="  px-[4px]"
-                  ></Image>
+                <Link
+                  href="/"
+                  className="text-primary hover:text-secondary text-[22px] px-[4px] font-[400]"
+                >
+                  <FaYoutube />
                 </Link>
-                <Link href="/">
-                  <Image
-                    src="/linkedin.svg"
-                    alt="LinkedIn"
-                    width={25.25}
-                    height={17}
-                    className="  px-[4px]"
-                  ></Image>
+                <Link
+                  href="/ "
+                  className="text-primary hover:text-secondary text-[20px] px-[4px] font-[400]"
+                >
+                  <FaLinkedinIn />
                 </Link>
               </div>
             </nav>
           </div>
 
-          <div className="flex  pt-[20px] items-start bottomnav  justify-end">
-            <ul className="flex  text-secondary">
-              <li className="px-[11px] ">
-                <Link href="/">
-                  <h6 className="relative hover:text-primary pb-[20px]">
-                    Company
-                  </h6>
+          <div className="flex  pt-[20px] items-start bottomnav  justify-end ">
+            <ul className="flex  text-secondary pb-[20px]">
+              <li className="px-[11px]  ">
+                <Link
+                  href="/"
+                  className="relative text-[1.125rem] hover:text-primary pb-[20px] "
+                >
+                  Company
                 </Link>
               </li>
               <li className="px-[11px]">
-                <Link href="/">
-                  {" "}
-                  <h6 className="relative hover:text-primary pb-[20px]">
-                    Products{" "}
-                  </h6>
+                <Link
+                  href="/"
+                  className="relative text-[1.125rem] hover:text-primary pb-[20px]"
+                >
+                  Products
                 </Link>
               </li>
               <li className="px-[11px]">
-                <Link href="/">
-                  {" "}
-                  <h6 className="relative hover:text-primary pb-[20px]">
-                    Solutions{" "}
-                  </h6>
+                <Link
+                  href="/"
+                  className="relative text-[1.125rem] hover:text-primary pb-[20px]"
+                >
+                  Solutions
                 </Link>
               </li>
               <li className="px-[11px]">
-                <Link href="/">
-                  <h6 className="relative hover:text-primary pb-[20px]">
-                    {" "}
-                    Partners{" "}
-                  </h6>
+                <Link
+                  href="/"
+                  className="relative text-[1.125rem] hover:text-primary pb-[20px]"
+                >
+                  Partners
                 </Link>
               </li>
               <li className="px-[11px]">
-                <Link href="/">
-                  <h6 className="relative hover:text-primary pb-[20px]">
-                    {" "}
-                    Contact{" "}
-                  </h6>
+                <Link
+                  href="/"
+                  className="relative text-[1.125rem] hover:text-primary pb-[20px]"
+                >
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -115,40 +109,29 @@ function Navbar() {
             </button>
           </div>
         </div>
-        {/* Mobile Navbar */}
+
+        {/* Mobile Navbar  Hamburger */}
         <div className="lg:hidden flex items-center gap-4">
-          {/* Social Media Icons */}
           <div className="flex  py-[20px]">
-            <Link href="/">
-              <Image
-                src="/facebook.svg"
-                alt="Facebook"
-                width={18}
-                height={17}
-                className="  px-[4px]"
-              ></Image>
+            <Link
+              href="/"
+              className="text-primary hover:text-secondary text-[18px] px-[4px] font-[400]"
+            >
+              <FaFacebookF />
             </Link>
-            <Link href="/">
-              <Image
-                src="/youtube.svg"
-                alt="YouTube"
-                width={32.65}
-                height={17}
-                className="  px-[4px]"
-              ></Image>
+            <Link
+              href="/"
+              className="text-primary hover:text-secondary text-[22px] px-[4px] font-[400]"
+            >
+              <FaYoutube />
             </Link>
-            <Link href="/">
-              <Image
-                src="/linkedin.svg"
-                alt="LinkedIn"
-                width={25.25}
-                height={17}
-                className="  px-[4px]"
-              ></Image>
+            <Link
+              href="/ "
+              className="text-primary hover:text-secondary text-[20px] px-[4px] font-[400]"
+            >
+              <FaLinkedinIn />
             </Link>
           </div>
-
-          {/* Hamburger Button */}
           <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
             {isOpen ? <FiX /> : <FiMenu />}
           </button>

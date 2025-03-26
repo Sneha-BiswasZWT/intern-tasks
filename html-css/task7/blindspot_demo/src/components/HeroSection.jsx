@@ -3,6 +3,7 @@ import Image from "next/image";
 import GetStartedBtn from "./GetStartedBtn";
 import Link from "next/link";
 import { GoHomeFill } from "react-icons/go";
+import HeroContent from "./HeroContent";
 
 function HeroSection() {
   return (
@@ -16,61 +17,52 @@ function HeroSection() {
           className="absolute"
         ></Image>
 
-        <div className="wrapper-container flex relative text-white ">
-          {/* left-side */}
-          <div className="pt-[53px] pb-[60px] w-3/9">
-            <Image
-              src="blindspot.svg"
-              alt="blindspot"
-              width={236.13}
-              height={76.56}
-            ></Image>
-
-            <h6 className="font-bold pt-3" style={{ letterSpacing: "3.6px" }}>
-              {" "}
-              FOR{" "}
-            </h6>
-            <h1 className="font-light relative after:absolute after:bottom-0 after:bg-white after:left-0 mb-[7px] after:w-[68px] after:h-[5px] after:content-['']">
-              Consulting Firms
-            </h1>
-            <h6
-              className="font-bold pt-[28px] pb-[20px]"
-              style={{ letterSpacing: "3.6px" }}
-            >
-              ATTACK SIMULATIONS & PURPLE TEAM AUTOMATION
-            </h6>
-            <Link href="/">
-              <GetStartedBtn text="Get Started" rotation={0} />
-            </Link>
-          </div>
-          {/* right-side */}
-          <div className="flex flex-col justify-between pb-[60px]">
-            <ul className="flex font-bold text-sm justify-end pt-6">
+        <div className="wrapper-container flex flex-wrap flex-col relative text-white ">
+          {/* Top breadcrumb */}
+          <div className=" w-full mb-[1.07rem]">
+            <ul className="flex font-bold text-sm justify-end pt-3 lg:pt-6">
               <li className="px-[5px] hover:text-primary">
                 <Link href="/">
                   {" "}
-                  <GoHomeFill className="text-lg" />
+                  <GoHomeFill className="text-md" />
                 </Link>
               </li>
-              <li className="px-[5px]">{">"} </li>
+              <li>{">"} </li>
               <li className="px-[5px]  hover:text-primary">
                 {" "}
                 <Link href="/">BlindSPOT Overview</Link>
               </li>
-              <li className="px-[5px]">{">"} </li>
+              <li>{">"} </li>
               <li className="px-[5px]  hover:text-primary">
                 {" "}
                 <Link href="/"> Consulting Firms </Link>
               </li>
             </ul>
-
-            <Image
-              src="/hero-img1.webp"
-              alt="image"
-              width={680}
-              height={424}
-              className="rounded-sm"
-            ></Image>
+          </div>
+          {/* bottom */}
+          <div className=" flex-col flex lg:flex-row  justify-between pb-[60px]">
+            {/* left-side */}
+            <div className=" w-full lg:w-4/12 lg:px-[15px]">
+              <HeroContent
+                imageSrc="/blindspot.svg"
+                altText="blindspot"
+                heading="Consulting Firms"
+                subheading="ATTACK SIMULATIONS & PURPLE TEAM AUTOMATION"
+              />
+              <Link href="/">
+                <GetStartedBtn text="Get Started" rotation={0} />
+              </Link>
+            </div>
+            {/* right-side */}
+            <div className="w-full lg:w-8/12 mt-6 lg:mt-0  lg:px-[15px]">
+              <Image
+                src="/hero-img1.webp"
+                alt="image"
+                width={680}
+                height={424}
+                className="rounded-sm"
+              ></Image>
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,52 @@
+"use client";
+import React from "react";
+import GetStartedBtn from "./GetStartedBtn";
+
+function PartnerSection({ useCasesRef, valueRef, supportRef }) {
+  const handleScroll = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  return (
+    <div className="bg-secondary">
+      <div className="wrapper-container text-white flex flex-col py-[2.1875rem]">
+        <div className="font-bold text-center">
+          <h4 className="pb-[30px]">
+            BlindSPOT was built by consultants for consultants as a Service
+            Enablement tool.
+          </h4>
+          <h6 style={{ letterSpacing: "3.6px" }}>
+            FIND OUT WHAT IT MEANS TO BE A BLINDSPOT PARTNER
+          </h6>
+        </div>
+        <div className="flex flex-col flex-wrap xl:flex-row pt-[1.875rem] items-center justify-center">
+          <div className="px-[11px]">
+            <GetStartedBtn
+              text="Partner Use Cases"
+              rotation={90}
+              onClick={() => handleScroll(useCasesRef)}
+            />
+          </div>
+          <div className="px-[11px] mt-6 xl:mt-0">
+            <GetStartedBtn
+              text="Value & Engagement Options"
+              rotation={90}
+              onClick={() => handleScroll(valueRef)}
+            />
+          </div>
+          <div className="px-[11px] mt-6 xl:mt-0">
+            <GetStartedBtn
+              text="Partner Support"
+              rotation={90}
+              onClick={() => handleScroll(supportRef)}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default PartnerSection;
