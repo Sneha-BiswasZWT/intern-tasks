@@ -3,13 +3,13 @@ import Image from "next/image";
 
 function EngageCards({ subtitle, title, content, color, number }) {
   return (
-    <div className="pt-[44px] pb-2 w-full md:w-1/2 xl:w-1/3 pr-[15px]">
+    <div className="pt-[44px] pb-2 w-full sm:w-1/2 xl:w-1/3 pr-[15px]">
       <div className="pl-[12px] ">
         <div
           className="font-bold text-white pb-[19px] border-b-[5px]"
           style={{ borderBottomColor: color }}
         >
-          <h3>{title}</h3>
+          <h3 className="!text-2xl md:!text-4xl">{title}</h3>
           <h5>{subtitle}</h5>
         </div>
 
@@ -18,7 +18,7 @@ function EngageCards({ subtitle, title, content, color, number }) {
           <h6 className="w-3/4">{content}</h6>
         </div>
         <div className="pt-4">
-          <button className=" leading-none  pr-[9px] py-2 bg-primary rounded-4xl text-white hover:bg-white hover:text-secondary flex items-center  cursor-pointer">
+          <button className=" leading-none  pr-[9px] py-3 bg-primary rounded-4xl text-white hover:bg-white hover:text-secondary flex items-center  cursor-pointer">
             <p className=" text-[13px] pr-[20px] pl-[16px]">Get Started</p>
             <div className="w-[12px]">
               <Image

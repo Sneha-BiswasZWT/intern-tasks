@@ -236,7 +236,9 @@ function UsesCases() {
     <>
       <div className="bg-white">
         <div className="wrapper-container py-[28px]">
-          <h1 className="font-light text-secondary">Partner Use Cases</h1>
+          <h1 className="font-light text-secondary !text-5xl md:!text-[3.6875rem]">
+            Partner Use Cases
+          </h1>
         </div>
 
         {/* Tab Buttons */}

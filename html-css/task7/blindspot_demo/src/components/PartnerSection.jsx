@@ -5,7 +5,10 @@ import GetStartedBtn from "./GetStartedBtn";
 function PartnerSection({ useCasesRef, valueRef, supportRef }) {
   const handleScroll = (ref) => {
     if (ref && ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      const offset = 115; // Adjust this value to match your navbar height
+      const elementPosition =
+        ref.current.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: elementPosition - offset, behavior: "smooth" });
     }
   };
 

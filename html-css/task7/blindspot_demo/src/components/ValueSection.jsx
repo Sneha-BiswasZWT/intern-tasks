@@ -80,7 +80,7 @@ function ValueSection() {
               <p className="font-light text-secondary text-4xl sm:text-[59px]">
                 Value & Engagement Options
               </p>
-              <div className=" pt-7 pb-6 text-secondary font-bold border-b-5 border-[#BCBCBC] w-full">
+              <div className=" pt-7 pb-6 text-secondary font-bold border-b-5 border-[#BCBCBC]  lg:mb-0 mb-11 w-full">
                 <h6 style={{ letterSpacing: "3.6px" }}>
                   BLINDSPOT PARTNER VALUE
                 </h6>
@@ -107,7 +107,9 @@ function ValueSection() {
           <div>
             <div className="  pt-[50px] pb-6 text-white font-bold border-b-5 border-[#BCBCBC] w-full">
               <h6 style={{ letterSpacing: "3.6px" }}>ENGAGEMENT OPTIONS</h6>
-              <h2>3 Convenient Options Based on Your Needs</h2>
+              <h2 className="!text-3xl md:!text-[2.5rem]">
+                3 Convenient Options Based on Your Needs
+              </h2>
             </div>
           </div>
 

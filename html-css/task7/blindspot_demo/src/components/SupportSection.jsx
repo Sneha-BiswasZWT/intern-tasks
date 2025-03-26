@@ -40,13 +40,13 @@ function SupportSection() {
         className="absolute z-0"
       ></Image>
       <div>
-        <div className="wrapper-container py-[31px]">
+        <div className="wrapper-container py-[31px] ">
           <div>
-            <p className="font-light text-secondary text-4xl sm:text-[59px]">
+            <h2 className="font-light text-secondary !text-[3.125rem] md:!text-[3.6875rem] ">
               Partner Support
-            </p>
+            </h2>
             <div className=" pt-7 pb-6 text-secondary  border-b-5 border-[#BCBCBC]/40 w-full">
-              <h4>
+              <h4 className="!text-lg md:!text-2xl">
                 When you become a BlindSPOT partner, we provide full turnkey
                 support to ensure BlindSPOT will:
               </h4>
@@ -106,16 +106,16 @@ function SupportSection() {
         </div> */}
 
           <section className="tab-section relative">
-            <div className="py-10 flex items-start flex-col lg:flex-row ">
+            <div className="py-10 flex items-start flex-col lg:flex-row lg:items-center">
               <div className=" text-secondary w-full lg:8/12 xl:w-full">
                 <h6 className="font-bold" style={{ letterSpacing: "3.6px" }}>
                   JOURNEY TO SUCCESS
                 </h6>
-                <h2 className="font-bold">
+                <h2 className="font-bold !text-5xl md:!text-[3.6875rem] md:max-w-full max-w-10/12">
                   Our Turn-Key Support Ensures Your Success
                 </h2>
               </div>
-              <div className="w-full md:w-6/12 xl:w-4/12 flex  my-auto xl:justify-end px-[0.95rem] mt-3  xl:mt-0 xl:pl-[0.95rem] pl-0">
+              <div className="w-full md:w-6/12 xl:w-4/12 flex  xl:justify-end px-[0.95rem] mt-3  xl:mt-0 xl:pl-[0.95rem] pl-0">
                 <GetStartedBtn />
               </div>
             </div>
@@ -145,7 +145,7 @@ function SupportSection() {
                 </div>
 
                 <div className="tab-single  mt-4 relative  after:h-full after:absolute after:w-screen after:border-primary after:border-r-0 after:border-5  after:top-0 after:right-full">
-                  <div className="tab-single-inner py-5 pr-4 rounded-r-full border-5 border-primary border-l-0   flex justify-between items-center text-sm ">
+                  <div className="tab-single-inner font-medium py-5 pr-4 rounded-r-full border-5 border-primary border-l-0   flex justify-between items-center text-sm ">
                     Sales Support
                     <div className="w-[22px] pr-1">
                       <Image
@@ -159,7 +159,7 @@ function SupportSection() {
                   </div>
                 </div>
                 <div className="tab-single  mt-4 relative  after:h-full after:absolute after:w-screen after:border-primary after:border-r-0 after:border-5  after:top-0 after:right-full">
-                  <div className="tab-single-inner py-5 pr-4 rounded-r-full border-5 border-primary border-l-0   flex justify-between items-center text-sm">
+                  <div className="tab-single-inner py-5 font-medium pr-4 rounded-r-full border-5 border-primary border-l-0   flex justify-between items-center text-sm">
                     Technical Support
                     <div className="w-[22px] pr-1">
                       <Image
