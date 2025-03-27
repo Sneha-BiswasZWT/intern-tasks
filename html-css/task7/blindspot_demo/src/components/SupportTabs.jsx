@@ -8,7 +8,7 @@ function SupportTabs({ title, description, state }) {
         <div className="tab-single active relative accordian ease-in ">
           <div className="tab-single-inner  bg-secondary text-white   pt-4  pb-7">
             <div className="flex justify-between">
-              <h3 className=" font-light pb-6 max-w-[245px] relative after:absolute after:bottom-0 after:h-[5px] after:w-[68px] after:content-[''] after:left-0 after:bg-white">
+              <h3 className=" font-light pb-6 w-11/12 relative after:absolute after:bottom-0 after:h-[5px] after:w-[68px] after:content-[''] after:left-0 after:bg-white">
                 {title}
               </h3>
               <div className="w-[22px] pr-1">

@@ -125,11 +125,11 @@ function SupportSection() {
               <h6 className="font-bold" style={{ letterSpacing: "3.6px" }}>
                 JOURNEY TO SUCCESS
               </h6>
-              <h2 className="font-bold !text-5xl md:!text-[2.5rem] md:max-w-11/12  max-w-10/12">
+              <h2 className="font-bold !text-4xl md:!text-[2.5rem] md:max-w-11/12  max-w-10/12">
                 Our Turn-Key Support Ensures Your Success
               </h2>
             </div>
-            <div className="w-full md:w-7/12 xl:w-4/12 flex items-start  xl:justify-end md:px-[0.95rem] mt-6  md:mt-0 xl:pl-[0.95rem]">
+            <div className="w-full md:w-7/12 xl:w-4/12 flex items-start mt-7  xl:justify-end md:pl-[0.95rem]   md:mt-0 xl:pl-[0.95rem]">
               <GetStartedBtn />
             </div>
           </div>
@@ -159,7 +159,7 @@ function SupportSection() {
                     <div className=" xl:px-[1.125rem]">
                       <div className="tab-content">
                         <div className="tab-content-inner">
-                          <div className="tab-image w-[21.875rem] h-full">
+                          <div className="tab-image sm:w-[21.875rem] h-full">
                             <Image
                               src={imgsrc}
                               alt="banner Image"

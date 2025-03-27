@@ -84,7 +84,9 @@ function ValueSection() {
                 <h6 style={{ letterSpacing: "3.6px" }}>
                   BLINDSPOT PARTNER VALUE
                 </h6>
-                <h2>Add Value at Scale and Stand Out From The Competition</h2>
+                <h2 className="!text-3xl sm:!text-[2.5rem]">
+                  Add Value at Scale and Stand Out From The Competition
+                </h2>
               </div>
             </div>
 

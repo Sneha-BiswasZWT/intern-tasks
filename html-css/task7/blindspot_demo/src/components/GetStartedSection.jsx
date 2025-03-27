@@ -19,16 +19,18 @@ function GetStartedSection() {
             <h6 className="font-bold" style={{ letterSpacing: "3.6px" }}>
               GET STARTED
             </h6>
-            <h2 className="font-light pb-6 relative after:absolute after:bottom-0 after:w-[68px] after:h-[5px] after:content-[''] after:left-0 after:bg-white ">
+            <h2 className="font-light pb-6 relative !text-4xl md:!text-[2.5rem] after:absolute after:bottom-0 after:w-[68px] after:h-[5px] after:content-[''] after:left-0 after:bg-white ">
               Contact Us to Learn More
             </h2>
-            <h4 className="pt-[30px] pb-5">
+            <h4 className="pt-[30px] !text-xl md:!text-2xl pb-5">
               Consulting firms around the world are adding this capability to
               meet market expectations. Don’t wait! Get BlindSPOT today and
               secure your firms future.
             </h4>
             <button className=" leading-none pr-4 py-[20px] bg-white rounded-4xl text-primary hover:bg-primary hover:text-white flex items-center gap-2 cursor-pointer">
-              <h4 className="pr-[30px] pl-[28px]">Become a Partner</h4>
+              <h4 className="pr-[30px] pl-[28px] !text-xl md:!text-2xl">
+                Become a Partner
+              </h4>
               <div className="w-[22]">
                 <Image
                   src="/arrow.svg"

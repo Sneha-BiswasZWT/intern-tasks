@@ -13,7 +13,7 @@ function TabBtn({ text, rotation, state, onClick }) {
         }
         hover:bg-white hover:text-secondary`}
     >
-      <h6 className="pr-[30px] pl-[28px] leading-none">{text}</h6>
+      <h6 className=" pl-[1.75rem] leading-none">{text}</h6>
       <div className="w-[17px]">
         <Image
           src="/arrow.svg"
