@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import GetStartedBtn from "./GetStartedBtn";
+import ScrollBtn from "./ScrollBtn";
 
 function PartnerSection({ useCasesRef, valueRef, supportRef }) {
   const handleScroll = (ref) => {
@@ -26,21 +26,21 @@ function PartnerSection({ useCasesRef, valueRef, supportRef }) {
         </div>
         <div className="flex flex-col flex-wrap xl:flex-row pt-[1.875rem] items-center justify-center">
           <div className="px-[11px]">
-            <GetStartedBtn
+            <ScrollBtn
               text="Partner Use Cases"
               rotation={90}
               onClick={() => handleScroll(useCasesRef)}
             />
           </div>
           <div className="px-[11px] mt-6 xl:mt-0">
-            <GetStartedBtn
+            <ScrollBtn
               text="Value & Engagement Options"
               rotation={90}
               onClick={() => handleScroll(valueRef)}
             />
           </div>
           <div className="px-[11px] mt-6 xl:mt-0">
-            <GetStartedBtn
+            <ScrollBtn
               text="Partner Support"
               rotation={90}
               onClick={() => handleScroll(supportRef)}

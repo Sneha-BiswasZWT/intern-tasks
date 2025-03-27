@@ -38,7 +38,7 @@ const data = {
   ],
   engageCards: [
     {
-      title: "Annual Subscription",
+      title: " Annual Subscription ",
       subtitle: "Are You Ready to Scale?",
       color: "#AD53F0",
       number: "01",
@@ -47,7 +47,6 @@ const data = {
     },
     {
       title: "Project-Based",
-      subtitle: "Not Ready to Subscribe?",
       color: "#EB6272",
       number: "02",
       content: "You can rent our platform on a project-by-project basis.",

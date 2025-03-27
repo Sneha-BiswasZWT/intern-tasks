@@ -80,6 +80,22 @@ const tabData = [
       "Perform simulation professional services",
     ],
   },
+  {
+    id: "tab4",
+    title: "",
+    description:
+      "We train and support your technical team so they will confidently excel with this new offering.",
+    imgsrc: "/supportimg3.jpg",
+
+    listTitle: "We help your team:",
+    listData: [
+      "Manage the BlindSPOT platform",
+      "Answer platform technical questions",
+      "Provide sales support",
+      "Simulation & purple team playbooks",
+      "Perform simulation professional services",
+    ],
+  },
 ];
 
 function SupportSection() {
