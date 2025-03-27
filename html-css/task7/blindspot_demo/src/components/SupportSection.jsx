@@ -134,7 +134,7 @@ function SupportSection() {
             </div>
           </div>
 
-          <div className="tab-wrapper flex xl:flex-row flex-col flex-wrap items-start justify-between ease-in">
+          <div className="tab-wrapper flex xl:flex-row flex-col flex-wrap items-start justify-between ">
             <div className="flex flex-col xl:w-1/3 md:w-11/12 w-10/12 pr-[60px]">
               {tabData.map(({ id, title, description }) => (
                 <div key={id} onClick={() => setActiveTab(id)}>
@@ -153,7 +153,7 @@ function SupportSection() {
                 activeTab === id ? (
                   <div
                     key={id}
-                    className="flex w-full flex-col md:flex-row justify-around"
+                    className="flex w-full flex-col md:flex-row justify-around  xl:justify-normal"
                   >
                     {/* Image Section */}
                     <div className=" xl:px-[1.125rem]">
