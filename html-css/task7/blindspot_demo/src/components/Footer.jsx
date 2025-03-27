@@ -166,7 +166,7 @@ function Footer() {
                 </li>
               </ul>
 
-              <ul className="space-y-2  pt-6 md:pt-0">
+              <ul className="space-y-2  pt-6   ">
                 <li className="font-bold  text-white text-[16px]">Contact</li>
                 <li>
                   <Link href="/">Contact</Link>
