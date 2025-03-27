@@ -10,9 +10,11 @@ function UseCaseBanner({ title, tabName, description, imageSrc }) {
           <h6 className="font-bold" style={{ letterSpacing: "3.6px" }}>
             {tabName}
           </h6>
-          <h2 className="font-bold">{title}</h2>
+          <h2 className="font-bold !text-[2.125rem] md:!text-[2.5rem]">
+            {title}
+          </h2>
         </div>
-        <div className="w-full lg:w-5/12 flex  my-auto lg:justify-end px-[0.95rem] lg:pl-[0.95rem] pl-0">
+        <div className="w-full lg:w-5/12 flex  mt-6 lg:mt-0 lg:justify-end px-[0.95rem] lg:pl-[0.95rem] pl-0">
           <GetStartedBtn />
         </div>
       </div>
