@@ -120,16 +120,16 @@ function SupportSection() {
 
         {/* Tab Section */}
         <section className="tab-section relative">
-          <div className="py-10 flex items-start flex-col lg:flex-row lg:items-center">
+          <div className="py-10 flex items-start justify-center flex-col md:flex-row lg:items-center">
             <div className="text-secondary w-full lg:8/12 xl:w-full">
               <h6 className="font-bold" style={{ letterSpacing: "3.6px" }}>
                 JOURNEY TO SUCCESS
               </h6>
-              <h2 className="font-bold !text-5xl md:!text-[3.6875rem] md:max-w-full max-w-10/12">
+              <h2 className="font-bold !text-5xl md:!text-[2.5rem] md:max-w-11/12  max-w-10/12">
                 Our Turn-Key Support Ensures Your Success
               </h2>
             </div>
-            <div className="w-full md:w-6/12 xl:w-4/12 flex xl:justify-end px-[0.95rem] mt-3 xl:mt-0 xl:pl-[0.95rem]">
+            <div className="w-full md:w-7/12 xl:w-4/12 flex items-start  xl:justify-end md:px-[0.95rem] mt-6  md:mt-0 xl:pl-[0.95rem]">
               <GetStartedBtn />
             </div>
           </div>

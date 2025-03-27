@@ -17,7 +17,7 @@ function UseCaseBanner({ title, tabName, description, imageSrc }) {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row pt-[2rem] justify-between items-center ">
-        <h2 className="w-full  lg:w-6/12 font-light text-secondary pr-[30px] !text-3xl !md:text-4xl lg:!text-[3.6875rem]">
+        <h2 className="w-full  lg:w-6/12 font-light text-secondary pr-[30px] !text-3xl !md:text-4xl lg:!text-[2.5rem]">
           {description}
         </h2>
         <div className="w-full lg:w-6/12 lg:pl-[30px] mt-4 lg:mt-0">
